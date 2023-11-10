@@ -11,7 +11,7 @@ ubot = Client(name="renameruser",
               api_hash="e9105cffc9ef49b4011dfeb843acb091",
               sleep_threshold=15,
               no_updates=True,
-              session_string="BQEYx1oANVHw5IW1iyTNagH_jWQ6SJis1Xehx-YraxhdPvqmNBgN8gVg8I-W4e9WiZFr4-xzHnDhqhmMw1tb95PgCJWPSO_KLHnp0Xu3BHV9WCgnLQg8SEKV3LsQKQuycOsjTbb46f1XyhqMmz63228wuWppzdLkIsconnafIMCSVhgvGfI7GIURxT7FdxAalXdf_8dTrk0wdzvxLzeJsmsOwaj5_9OQmwMYBFv14XXi92Rt55vHk1b6PAMdB3bF2wOSds4woDX72jKs6Rpssi40qnyMx_cf75Oa9_pE0Uxt2WWw1SKkGgiKEW5EPXkleQL7qllUD8dYes4CsPpEo788irTG2gAAAAAo0B41AA",
+              session_string="BQEYx1oAiLn_pZXInt3wQuCF24IlzkypyHhWhatNZ0xDaDh6FahQbfW5Y_IXW6pIfiyyPXchKaelbmz7byr4RVzjEvC1hoHxBMTVo4Kh1Z2h6ASzHS9U33D27LDi68oaVv2I2AvlGSP548uSLoaZnuENRzv2z4i4pFz1bCi6pXtiF4rBr9BLc8FfLJ637JHBCbGPvxE3lpucnh0EPPq4c78iXJceDKrKlfK9dDlF5YjWjpXnjyLpq7a1d1Vx0MLeGZQwORv53dGtQvf7fU2FI8FcRNgqWZlwiNqyQCaQ-JcpdeJuPn0EOJ3AAgfC1c7EZA1EkwVb3zr3YtWdqsLizUCDum9cNgAAAAAo0B41AA",
               )
 
 
