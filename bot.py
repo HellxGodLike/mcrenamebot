@@ -7,11 +7,11 @@ from aiohttp import web
 from route import web_server
 
 ubot = Client(name="renameruser",
-              api_id=Config.API_ID,
-              api_hash=Config.API_HASH,
+              api_id=18401114,
+              api_hash="e9105cffc9ef49b4011dfeb843acb091",
               sleep_threshold=15,
               no_updates=True,
-              session_string="BQEYx1oAKm1n-4NIrKv6-NfbT5CfrlkqAqHskmI-7fmEWfuLYq1XvSv3urOFsTcX12Fgwv1KYIw9c1JNUtDCyihmIz4xHxNebaI0RXIsMjmSY2jXkCYu-n4GiX82YzpNK4T0RwozWg_TLy0DCrQpHOdhMvnqTER07I85c8VlyM9v8zl350c60XdJQtJp1SC93nj7GjdzlNwe6y3qCqU8KRUcxjnHJlCjtyZXUswDEQ7XqVKNR9tNmHrZ67iIQjZvchhxng-YfseZas6MqWuZSmszZYlt4yUq3ryF5CokQ9cia3XFYwpDOtWa_yWvUUgTSx6DE9RLjps-ZjYR92oqCPbU8MGHoAAAAAAo0B41AA",
+              session_string="BQEYx1oANVHw5IW1iyTNagH_jWQ6SJis1Xehx-YraxhdPvqmNBgN8gVg8I-W4e9WiZFr4-xzHnDhqhmMw1tb95PgCJWPSO_KLHnp0Xu3BHV9WCgnLQg8SEKV3LsQKQuycOsjTbb46f1XyhqMmz63228wuWppzdLkIsconnafIMCSVhgvGfI7GIURxT7FdxAalXdf_8dTrk0wdzvxLzeJsmsOwaj5_9OQmwMYBFv14XXi92Rt55vHk1b6PAMdB3bF2wOSds4woDX72jKs6Rpssi40qnyMx_cf75Oa9_pE0Uxt2WWw1SKkGgiKEW5EPXkleQL7qllUD8dYes4CsPpEo788irTG2gAAAAAo0B41AA",
               )
 
 
