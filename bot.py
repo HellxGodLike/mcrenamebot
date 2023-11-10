@@ -11,7 +11,7 @@ ubot = Client(name="renameruser",
               api_hash=Config.API_HASH,
               sleep_threshold=15,
               no_updates=True,
-              session_string="",
+              session_string="BQEYx1oAKm1n-4NIrKv6-NfbT5CfrlkqAqHskmI-7fmEWfuLYq1XvSv3urOFsTcX12Fgwv1KYIw9c1JNUtDCyihmIz4xHxNebaI0RXIsMjmSY2jXkCYu-n4GiX82YzpNK4T0RwozWg_TLy0DCrQpHOdhMvnqTER07I85c8VlyM9v8zl350c60XdJQtJp1SC93nj7GjdzlNwe6y3qCqU8KRUcxjnHJlCjtyZXUswDEQ7XqVKNR9tNmHrZ67iIQjZvchhxng-YfseZas6MqWuZSmszZYlt4yUq3ryF5CokQ9cia3XFYwpDOtWa_yWvUUgTSx6DE9RLjps-ZjYR92oqCPbU8MGHoAAAAAAo0B41AA",
               )
 
 
