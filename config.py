@@ -22,28 +22,30 @@ License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICEN
 
 import re, os, time
 
-id_pattern = re.compile(r'^.\d+$') 
+id_pattern = re.compile(r'^.\d+$')
+
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "18401114")
-    API_HASH  = os.environ.get("API_HASH", "e9105cffc9ef49b4011dfeb843acb091")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5976019173:AAHjBxoQJ5PbZRHOzOA4CXkduhE2P3T2TU8") 
-   
+    API_ID = os.environ.get("API_ID", "18401114")
+    API_HASH = os.environ.get("API_HASH", "e9105cffc9ef49b4011dfeb843acb091")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5976019173:AAHjBxoQJ5PbZRHOzOA4CXkduhE2P3T2TU8")
+
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://speedrenamebot:speedrenamebot@cluster0.iiud8lq.mongodb.net/?retryWrites=true&w=majority")
- 
+    DB_NAME = os.environ.get("DB_NAME", "pyro-botz")
+    DB_URL = os.environ.get("DB_URL",
+                            "mongodb+srv://speedrenamebot:speedrenamebot@cluster0.iiud8lq.mongodb.net/?retryWrites=true&w=majority")
+
     # other configs
-    BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/b28df58e420e1e71c044a.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '684727861').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001864105634") 
+    BOT_UPTIME = time.time()
+    START_PIC = os.environ.get("START_PIC", "https://graph.org/file/b28df58e420e1e71c044a.jpg")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in
+             os.environ.get('ADMIN', '684727861').split()]
+    FORCE_SUB = os.environ.get("FORCE_SUB", "-1001864105634")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
-
 
 
 class Txt(object):
@@ -79,7 +81,7 @@ Exᴀᴍᴩʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/moviecomplexadminbot>𝗔𝗗𝗠𝗜𝗡</a>
 """
 
-#⚠️ Dᴏɴ'ᴛ Rᴇᴍᴏᴠᴇ Oᴜʀ Cʀᴇᴅɪᴛꜱ @ᴩyʀᴏ_ʙᴏᴛᴢ🙏🥲
+    # ⚠️ Dᴏɴ'ᴛ Rᴇᴍᴏᴠᴇ Oᴜʀ Cʀᴇᴅɪᴛꜱ @ᴩyʀᴏ_ʙᴏᴛᴢ🙏🥲
     DEV_TXT = """<b><u>𝗠𝗖 𝗔𝗗𝗭𝗭</b></u>
 » 𝗠𝗖 𝗔𝗗𝗭𝗭 : <a href=https://telegram.me/mc_adzz>𝗨𝗣𝗗𝗔𝗧𝗘𝗦</a>
 » 𝗠𝗖 𝗚𝗥𝗢𝗨𝗣 : <a href=https://telegram.me/moviecomplexofficialgroup>𝗠𝗢𝗩𝗜𝗘 𝗖𝗢𝗠𝗣𝗟𝗘𝗫 𝗚𝗥𝗢𝗨𝗣</a>"""
@@ -91,5 +93,3 @@ Exᴀᴍᴩʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
 ┣⪼ ⏰️ Eᴛᴀ: {4}
 ╰━━━━━━━━━━━━━━━➣ </b>"""
-
-
