@@ -117,7 +117,7 @@ async def doc(bot, update):
     await ms.edit("Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....")
     type = update.data.split("_")[1]
     try:
-        smdb = ubot if os.path.getsize(file_path) > 1932735282 else bot
+        smdb = ubot if os.path.getsize(file_path) > 2093796555 else bot
         if type == "document":
             await smdb.send_document(
                 update.message.chat.id,
