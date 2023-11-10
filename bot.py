@@ -6,6 +6,14 @@ from config import Config
 from aiohttp import web
 from route import web_server
 
+ubot = Client(name="renameruser",
+              api_id=Config.API_ID,
+              api_hash=Config.API_HASH,
+              sleep_threshold=15,
+              no_updates=True,
+              session_string="",
+        )
+
 class Bot(Client):
 
     def __init__(self):
@@ -41,5 +49,7 @@ class Bot(Client):
                 await self.send_message(Config.LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅 Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>")                                
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
+        await ubot.start()
 
 Bot().run()
+ubot.stop(True)
