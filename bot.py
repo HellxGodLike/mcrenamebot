@@ -27,10 +27,10 @@ Bot = Client(name="renamer",
 async def mainrun():
     await Bot.start()
     await ubot.start()
-    if Config.WEBHOOK:
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        await web.TCPSite(app, "0.0.0.0", 8080).start()
+    # if Config.WEBHOOK:
+    #    app = web.AppRunner(await web_server())
+    #   await app.setup()
+    #   await web.TCPSite(app, "0.0.0.0", 8080).start()
     print(f"{Bot.me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️")
     for id in Config.ADMIN:
         try:
@@ -50,4 +50,5 @@ async def mainrun():
     await Bot.stop(True)
 
 
-Bot.run(mainrun())
+if __name__ == "__main__":
+    Bot.run(mainrun())
