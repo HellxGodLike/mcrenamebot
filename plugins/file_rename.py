@@ -71,12 +71,11 @@ async def refunc(client, message):
 async def doc(bot, update):
     new_name = update.message.text
     new_filename = new_name.split(":-")[1]
-    file_path = f"downloads/{new_filename}"
     file = update.message.reply_to_message
 
     ms = await update.message.edit("Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....")
     try:
-        path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram,
+        file_path = await bot.download_media(message=file, progress=progress_for_pyrogram,
                                         progress_args=("Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))
     except Exception as e:
         return await ms.edit(e)
